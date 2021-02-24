@@ -14,6 +14,7 @@ yarn install
 
 ## Create a new branch from main
 <p>create a new branch from the main branch with your username</p>
+
 ```
 git checkout -b username main 
 ```
