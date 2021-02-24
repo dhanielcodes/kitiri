@@ -1,7 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Home, About } from './views'
-import { Nav } from './components'
+import { Nav } from './components';
+
 
 function App() {
   return (

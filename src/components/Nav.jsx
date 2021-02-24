@@ -1,11 +1,12 @@
 import '../App.css';
+import { Link } from 'react-router-dom'
+
 function Nav() {
   return (
-      <div className="App">
-      <header className="App-header">
-        <h1 className="text-black text-xl text-center">Home page</h1>
-      </header>
-    </div>
+    <div className="flex justify-around text-blue py-6">
+    <Link className="cursor-pointer" to="/">Home</Link>
+    <Link className="cursor-pointer" to="/about">About</Link>
+  </div>
     
   );
 }
