@@ -11,13 +11,14 @@ import {
 import {Link} from 'react-router-dom';
 
 function Nav() {
+  //
   return (
-    <div className='absolute bottom-5 left-0 right-0 mx-auto w-11/12 flex justify-around items-center py-6 bg-black rounded-3xl lg:px-12'>
+    <div className='absolute bottom-5 left-0 right-0 w-11/12 mx-auto flex justify-around items-center py-6 bg-black rounded-3xl lg:px-12 lg:flex-col lg:w-32 lg:h-5/6 lg:ml-5'>
       <Link className='cursor-pointer hidden lg:block' to='/'>
         <Logo />
       </Link>
 
-      <div className='flex justify-around items-center w-full max-w-3xl'>
+      <div className='flex justify-around items-center w-full max-w-3xl lg:flex-col lg:h-full lg:max-h-mxh'>
         <Link className='cursor-pointer' to='/'>
           <HomeIcon />
         </Link>

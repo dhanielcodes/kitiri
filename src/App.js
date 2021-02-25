@@ -1,12 +1,9 @@
-import {useState} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 import {Nav} from './components';
 import {About, Home} from './views';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
-  const [searchValue, setSearchValue] = useState('');
-
   return (
     <Router>
       <div className='App'>
@@ -17,7 +14,7 @@ function App() {
         </header>
         <Switch>
           <Route exact path='/'>
-            <Home searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Home />
           </Route>
           <Route path='/about'>
             <About />
