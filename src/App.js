@@ -1,28 +1,28 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Home, About } from './views'
-import { Nav } from './components';
-
+import {Nav} from './components';
+import {About, Home} from './views';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-      <div className="App">
-      <header className="App-header">
-        <h1 className="text-center p-6 bg-black text-white">Kitiri Frontend</h1>
+      <div className='App'>
+        <header className='App-header'>
+          <h1 className='text-center p-6 bg-black text-white'>
+            Kitiri Frontend
+          </h1>
+        </header>
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path='/about'>
+            <About />
+          </Route>
+        </Switch>
         <Nav />
-      </header>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-      </Switch>
-    </div>
+      </div>
     </Router>
-    
   );
 }
 
