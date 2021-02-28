@@ -1,3 +1,4 @@
-import Nav from './Nav'
+import Nav from './Nav';
+import Gallery from './gallery';
 
-export { Nav }
+export { Nav, Gallery }

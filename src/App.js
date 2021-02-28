@@ -1,5 +1,6 @@
 import './App.css';
 import {Nav} from './components';
+import {gallery} from "./components";
 import {About, Home} from './views';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -20,7 +21,9 @@ function App() {
             <About />
           </Route>
         </Switch>
+        <gallery />
         <Nav />
+        
       </div>
     </Router>
   );
