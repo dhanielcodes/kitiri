@@ -141,3 +141,19 @@ export function SearchIcon() {
     </svg>
   );
 }
+
+export function HamburgerIcon() {
+  return (
+    <svg
+      width='50'
+      height='20'
+      viewBox='0 0 50 20'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <rect width='50' height='5' rx='2.5' fill='black' />
+      <rect y='7.5' width='40.1639' height='5' rx='2.5' fill='black' />
+      <rect y='15' width='28.6885' height='5' rx='2.5' fill='black' />
+    </svg>
+  );
+}

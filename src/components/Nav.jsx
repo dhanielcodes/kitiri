@@ -13,7 +13,8 @@ import {Link} from 'react-router-dom';
 function Nav() {
   //
   return (
-    <div className='absolute bottom-5 left-0 right-0 w-11/12 mx-auto flex justify-around items-center py-6 bg-black rounded-3xl lg:px-12 lg:flex-col lg:w-32 lg:h-5/6 lg:ml-5'>
+    // <div className='absolute bottom-5 left-0 right-0 w-11/12 mx-auto flex justify-around items-center py-6 bg-black rounded-3xl lg:px-12 lg:flex-col lg:w-32 lg:h-5/6 lg:ml-5'>
+    <div className='absolute bottom-5 left-0 right-0 w-11/12 mx-auto flex justify-around items-center py-6 bg-black shadow-mob lg:shadow-desk rounded-3xl lg:order-1 lg:flex-col lg:col-span-1 lg:mt-8 lg:static lg:w-32'>
       <Link className='cursor-pointer hidden lg:block' to='/'>
         <Logo />
       </Link>
