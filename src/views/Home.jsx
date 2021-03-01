@@ -18,7 +18,10 @@ function Home() {
     {image: image6},
   ];
   return (
-    <div className='relative lg:grid lg:grid-cols-sidebar lg:my-12 min-h-screen max-w-6xl mx-auto'>
+    <div
+      style={{minHeight: 'calc(100vh - 30px)'}}
+      className='relative lg:grid lg:grid-cols-sidebar lg:my-12 min-h-screen max-w-6xl mx-auto'
+    >
       <div className='order-2 pb-20 lg:pb-0'>
         <header className='w-11/12 mx-auto mt-8'>
           <div className='flex justify-end lg:hidden'>
